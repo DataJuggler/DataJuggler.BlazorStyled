@@ -1,0 +1,35 @@
+﻿@inject IStyled Styled
+
+<Styled @bind-Classname="@example">
+    color: [colors.primary];
+</Styled>
+
+<p class="@example">Some text</p>
+
+<div>
+    <button @onclick="@onclickRed">Change theme value to red</button>
+</div>
+
+<div>
+    <button @onclick="@onclickHotpink">Change theme value to hotpink</button>
+</div>
+
+@code {
+    private string example;
+
+    protected override void OnInitialized()
+    {
+        //Normally this would be defined else where such as in MainLayout.cs
+        Styled.SetThemeValue("colors.primary", "hotpink");
+    }
+
+    private void onclickRed()
+    {
+        Styled.SetThemeValue("colors.primary", "red");
+    }
+
+    private void onclickHotpink()
+    {
+        Styled.SetThemeValue("colors.primary", "hotpink");
+    }
+}

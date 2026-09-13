@@ -1,0 +1,25 @@
+﻿<Styled @bind-Classname="@bigFont">
+    label: big-font;
+    font-size: 32px;
+</Styled>
+
+<Styled @bind-Classname="@div" ComposeBigFont="@bigFont" ComposeBigFontIf="@_showBig">
+    label: white;
+    background-color: white;
+</Styled>
+
+<div class="@div">
+    Some text
+</div>
+
+<button @onclick="@onclick">Toggle Font Size</button>
+
+@code {
+    private string div, grey, bigFont;
+    private bool _showBig = false;
+
+    private void onclick()
+    {
+        _showBig = !_showBig;
+    }
+}
