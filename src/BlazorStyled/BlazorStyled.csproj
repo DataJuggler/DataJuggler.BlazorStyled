@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
+    <TargetFramework>net11.0</TargetFramework>
     <LangVersion>10.0</LangVersion>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
     <PackageId>DataJuggler.BlazorStyled</PackageId>
-    <Version>10.0.0</Version>
+    <Version>11.0.0</Version>
     <Authors>Chanan Braunstein is the author. Forked, upgraded and republished by DataJuggler.</Authors>
     <Title>DataJuggler.BlazorStyled</Title>
     <Description>A fork of BlazorStyled by Chanan. CSS in Blazor Components</Description>

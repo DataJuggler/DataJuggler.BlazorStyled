@@ -1,6 +1,8 @@
 
 #News
 
+11.14.2026: I updated this project to .NET 11.
+
 9.13.2026: I updated this project to .NET 10. 
 
 11.14.2024: This project has been updated to .NET 9.
